@@ -17,6 +17,8 @@ for (const link of links) {
     })
 }
 
+//teste
+
 /* Mudar o header da página quando der scroll */
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
