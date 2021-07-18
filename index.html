@@ -8,6 +8,11 @@
 
     <!-- ICONES -->
     <link rel="stylesheet" href="assets/fonts/style.css">
+
+     <!--- Swiper --->
+    <link rel="stylesheet" 
+    href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css">
 
@@ -15,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  
   </head>
   <body>
     <header id="header">
@@ -135,27 +141,14 @@
 
       <!-- TESTIMONIALS -->
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
-          <div class="testimonials">
-           <div class="testimonials">
-             <blockquote>
-              <p>
-                <span>&ldquo;</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Delectus harum recusandae eum ex hic exercitationem aliquam.
-              </p>
-              <cite>
-                <img src="assets/fotos/10.jpg" 
-                alt="Foto de Wanessa Souza">
-                Wanessa Souza
-              </cite>
-             </blockquote>
-           </div>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
 
-           <div class="testimonials">
+           <div class="testimonials swiper-slide">
             <blockquote>
              <p>
                <span>&ldquo;</span>
@@ -163,37 +156,88 @@
                Delectus harum recusandae eum ex hic exercitationem aliquam.
              </p>
              <cite>
-               <img src="assets/fotos/19.jpg" 
-               alt="Foto de Franciele Vanega">
-               Franciele Vanega
+               <img src="assets/fotos/10.jpg" 
+               alt="Foto de Wanessa Souza">
+               Wanessa Souza
              </cite>
             </blockquote>
           </div>
 
-          <div class="testimonials">
-            <blockquote>
-             <p>
-               <span>&ldquo;</span>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Delectus harum recusandae eum ex hic exercitationem aliquam.
-             </p>
-             <cite>
-               <img src="assets/fotos/80.jpg" 
-               alt="Foto de Ayumi Saori">
-               Ayumi Saori
-             </cite>
-            </blockquote>
-          </div>
+          <div class="testimonials swiper-slide">
+           <blockquote>
+            <p>
+              <span>&ldquo;</span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Delectus harum recusandae eum ex hic exercitationem aliquam.
+            </p>
+            <cite>
+              <img src="assets/fotos/19.jpg" 
+              alt="Foto de Franciele Vanega">
+              Franciele Vanega
+            </cite>
+           </blockquote>
+         </div>
 
-           
+         <div class="testimonials swiper-slide">
+           <blockquote>
+            <p>
+              <span>&ldquo;</span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Delectus harum recusandae eum ex hic exercitationem aliquam.
+            </p>
+            <cite>
+              <img src="assets/fotos/80.jpg" 
+              alt="Foto de Ayumi Saori">
+              Ayumi Saori
+            </cite>
+           </blockquote>
+         </div>
+
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
 
+      <div class="divider-2"></div>
 
       <!-- CONTACT -->
-    </main>
+      <section class="section" id="contact">
+        <div class="container grid">
+          
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>Entre em contato com a BeautySalon, queremos tirar 
+            suas dúvidas, ouvir suas críticas e sugestões.</p>
+            <a href="https://api.whatsapp.com/send?phone=+5585998456754&text=Oi! Gostaria de agendar um horário." 
+            class="button"
+            target="_blank"
+            ><i class="icon-whatsapp"></i> Entrar em contato </a>
+          </div>
 
-    <script src="main.js"></script>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 85 99845-6754 </li>
+              <li><i class="icon-map-pin"></i> R. Amauri Souza, 346 </li>
+              <li><i class="icon-mail"></i> contato@beautysalon.com </li>
+            </ul>
+          </div>
+
+       
+        </div>
+      </section>
+
+
+    </main>
+      <!-- SWIPER -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- ScrollReveal-->
+      <script src="https://unpkg.com/scrollreveal"></script>
+    
+      <!-- main.js -->
+      <script src="main.js"></script>
   </body>
 </html>
